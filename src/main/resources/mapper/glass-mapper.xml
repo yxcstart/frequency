@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hitsz.frequency.dao.GlassMapper">
+    <sql id="selectFields">
+        `id`,`width`,`height`,`thick`,`elasticModulus`,`poissonRatio`,`upper`,`highThreshold`,`lowThreshold`,`lower`
+    </sql>
+    <select id="queryGlass" resultType="Glass">
+        select <include refid="selectFields"></include>
+        from glass
+        where width=#{width}
+        and height=#{height}
+        and thick=#{thick}
+    </select>
+
+
+</mapper>

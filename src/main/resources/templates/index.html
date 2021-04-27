@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/x-icon" th:href="@{/img/logo-blue.png}"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/global.css}" />
+	<link rel="stylesheet" th:href="@{/css/login.css}" />
+	<title>玻璃幕墙模态检测</title>
+</head>
+<body>
+<div class="nk-container">
+	<!-- 头部 -->
+	<header class="bg-dark sticky-top">
+		<div class="container">
+			<!-- 导航 -->
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<!-- logo -->
+				<a class="navbar-brand" href="#"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- 功能 -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item ml-3 btn-group-vertical">
+							<a class="nav-link" th:href="@{/index}">首页</a>
+						</li>
+						<li class="nav-item ml-3 btn-group-vertical">
+							<a class="nav-link" href="#">注册</a>
+						</li>
+						<li class="nav-item ml-3 btn-group-vertical">
+							<a class="nav-link" href="#">登录</a>
+						</li>
+						<li class="nav-item ml-3 btn-group-vertical dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img src="http://images.nowcoder.com/head/1t.png" class="rounded-circle" style="width:30px;"/>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item text-center" href="#">账号设置</a>
+								<a class="dropdown-item text-center" href="#">退出登录</a>
+								<div class="dropdown-divider"></div>
+								<span class="dropdown-item text-center text-secondary">nowcoder</span>
+							</div>
+						</li>
+					</ul>
+<!--					&lt;!&ndash; 搜索 &ndash;&gt;-->
+<!--					<form class="form-inline my-2 my-lg-0" action="search.html">-->
+<!--						<input class="form-control mr-sm-2" type="search" aria-label="Search" />-->
+<!--						<button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>-->
+<!--					</form>-->
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- 内容 -->
+	<div class="main">
+		<div class="container pl-5 pr-5 pt-3 pb-3 mt-3 mb-3">
+			<h3 class="text-center text-info border-bottom pb-3">玻璃幕墙模态检测</h3>
+			<form class="mt-5" method="post" th:action="@{/index}">
+				<div class="form-group row">
+					<label for="width" class="col-sm-2 col-form-label text-right">宽度:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="width" th:value="${glass!=null?glass.width:''}"
+							   name="width" placeholder="请输入玻璃宽度(mm)" required>
+						<div class="invalid-feedback">
+							该账号已存在!
+						</div>
+					</div>
+				</div>
+				<div class="form-group row mt-4">
+					<label for="height" class="col-sm-2 col-form-label text-right">高度:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="height" th:value="${glass!=null?glass.height:''}"
+							   name="height" placeholder="请输入玻璃高度(mm)" required>
+						<div class="invalid-feedback">
+							密码长度不能小于8位!
+						</div>
+					</div>
+				</div>
+				<div class="form-group row mt-4">
+					<label for="thick" class="col-sm-2 col-form-label text-right">厚度:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="thick" th:value="${glass!=null?glass.thick:''}"
+							   name="thick" placeholder="请输入玻璃厚度(mm)" required>
+						<div class="invalid-feedback">
+							两次输入的密码不一致!
+						</div>
+					</div>
+				</div>
+				<div class="form-group row mt-4">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-10 text-center">
+						<button type="submit" class="btn btn-info text-white form-control">立即评估</button>
+					</div>
+				</div>
+			</form>
+
+			<h3 class="text-center text-info border-bottom pb-3">评估结果</h3>
+			<form class="mt-5">
+				<div class="form-group row">
+					<label for="upper" class="col-sm-2 col-form-label text-right">频率上限:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="upper" th:value="${glass!=null?glass.upper:''}"
+							   name="width" placeholder="" required>
+						<div class="invalid-feedback">
+							该账号已存在!
+						</div>
+					</div>
+				</div>
+				<div class="form-group row mt-4">
+					<label for="highThreshold" class="col-sm-2 col-form-label text-right">临界值A:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="highThreshold" th:value="${glass!=null?glass.highThreshold:''}"
+							   name="lowThreshold" placeholder="" required>
+						<div class="invalid-feedback">
+							密码长度不能小于8位!
+						</div>
+					</div>
+				</div>
+				<div class="form-group row mt-4">
+					<label for="lowThreshold" class="col-sm-2 col-form-label text-right">临界值B:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="lowThreshold" th:value="${glass!=null?glass.lowThreshold:''}"
+							   name="lowThreshold" placeholder="" required>
+						<div class="invalid-feedback">
+							两次输入的密码不一致!
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="lower" class="col-sm-2 col-form-label text-right">频率下限:</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="lower" th:value="${glass!=null?glass.lower:''}"
+							   name="lower" placeholder="" required>
+						<div class="invalid-feedback">
+							该邮箱已注册!
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- 尾部 -->
+	<footer class="bg-dark">
+		<div class="container">
+			<div class="row">
+				<!-- 二维码 -->
+				<div class="col-4 qrcode">
+					<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />
+				</div>
+				<!-- 公司信息 -->
+				<div class="col-8 detail-info">
+					<div class="row">
+						<div class="col">
+							<ul class="nav">
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">关于我们</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">加入我们</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">意见反馈</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">企业服务</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">联系我们</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">免责声明</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-light" href="#">友情链接</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<ul class="nav btn-group-vertical company-info">
+								<li class="nav-item text-white-50">
+									地址：深圳市南山区西丽大学城哈工大校区
+								</li>
+								<li class="nav-item text-white-50">
+									联系方式：0755-27111111(电话)&nbsp;&nbsp;&nbsp;&nbsp;xxxx@hit.com
+								</li>
+								<li class="nav-item text-white-50">
+									土木与环境工程学院©2021 All rights reserved
+								</li>
+								<li class="nav-item text-white-50">
+									京ICP备14055008号-4 &nbsp;&nbsp;&nbsp;&nbsp;
+									<img src="http://static.nowcoder.com/company/images/res/ghs.png" style="width:18px;" />
+									京公网安备 11010502036488号
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script th:src="@{/js/global.js}"></script>
+<script th:src="@{/js/register.js}"></script>
+</body>
+</html>
