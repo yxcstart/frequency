@@ -7,5 +7,6 @@ package com.hitsz.frequency;
 public class test {
     public static void main(String[] args) {
         System.out.println("push test");//push
+        System.out.println("push test");//test pull
     }
 }
