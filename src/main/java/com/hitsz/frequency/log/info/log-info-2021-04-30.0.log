@@ -1,0 +1,77 @@
+2021-04-30 22:15:31,585 INFO [main] c.h.f.LoggerTest [StartupInfoLogger.java:55] Starting LoggerTest on DESKTOP-IRK0KCA with PID 22784 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 22:15:31,590 INFO [main] c.h.f.LoggerTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 22:15:33,082 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:15:33,174 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 22:15:33,443 INFO [main] c.h.f.LoggerTest [StartupInfoLogger.java:61] Started LoggerTest in 2.212 seconds (JVM running for 2.967)
+2021-04-30 22:15:33,743 INFO [main] c.h.f.LoggerTest [LoggerTest.java:22] info log
+2021-04-30 22:15:33,762 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:52:37,266 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 28232 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 22:52:37,268 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 22:52:38,753 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:52:38,838 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 22:52:39,135 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 2.223 seconds (JVM running for 2.964)
+2021-04-30 22:52:39,453 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-04-30 22:52:39,776 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-04-30 22:52:39,856 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:52:39,857 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-04-30 22:52:39,899 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-04-30 22:52:58,975 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 29320 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 22:52:58,976 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 22:53:00,171 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:53:00,239 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 22:53:00,457 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.768 seconds (JVM running for 2.571)
+2021-04-30 22:53:00,717 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-04-30 22:53:00,868 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-04-30 22:53:00,972 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:53:00,973 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-04-30 22:53:00,980 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-04-30 22:53:55,593 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 22236 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 22:53:55,595 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 22:53:57,299 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:53:57,402 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 22:53:57,724 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 2.56 seconds (JVM running for 3.35)
+2021-04-30 22:53:58,062 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-04-30 22:53:58,241 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-04-30 22:53:58,330 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:53:58,332 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-04-30 22:53:58,341 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-04-30 22:56:09,240 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 23852 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 22:56:09,241 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 22:56:10,532 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:56:10,602 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 22:56:10,838 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.941 seconds (JVM running for 2.795)
+2021-04-30 22:56:11,093 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-04-30 22:56:11,235 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-04-30 22:56:11,340 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 22:56:11,341 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-04-30 22:56:11,347 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-04-30 23:00:08,502 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 9844 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 23:00:08,503 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 23:00:09,649 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 23:00:09,717 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 23:00:09,935 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.714 seconds (JVM running for 2.422)
+2021-04-30 23:00:10,216 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-04-30 23:00:10,363 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-04-30 23:00:10,457 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 23:00:10,458 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-04-30 23:00:10,466 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-04-30 23:04:35,801 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 29528 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 23:04:35,804 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 23:04:37,039 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 23:04:37,123 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 23:04:37,416 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.912 seconds (JVM running for 3.149)
+2021-04-30 23:04:37,714 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-04-30 23:04:37,891 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-04-30 23:04:38,005 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 23:04:38,006 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-04-30 23:04:38,014 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-04-30 23:05:11,079 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 20748 (started by HIT in E:\workspace_idea\frequency)
+2021-04-30 23:05:11,082 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-04-30 23:05:12,186 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-30 23:05:12,259 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-04-30 23:05:12,485 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.704 seconds (JVM running for 2.416)
+2021-04-30 23:05:12,724 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-04-30 23:05:12,869 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-04-30 23:05:12,967 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-30 23:05:12,968 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-04-30 23:05:12,975 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
