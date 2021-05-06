@@ -1,276 +1,954 @@
-2021-05-05 16:40:24,847 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 22268 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 16:40:24,860 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 16:40:24,911 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 16:40:24,911 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 16:40:25,589 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 16:40:25,595 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 16:40:25,595 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 16:40:25,595 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 16:40:25,647 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 16:40:25,648 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 735 ms
-2021-05-05 16:40:25,921 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2021-05-05 16:40:25,930 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+2021-05-06 09:24:26,716 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 14408 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 09:24:26,747 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 09:24:26,850 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 09:24:26,850 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 09:24:27,600 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 09:24:27,606 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:24:27,606 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 09:24:27,607 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 09:24:27,652 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 09:24:27,652 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 801 ms
+2021-05-06 09:24:27,994 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:24:28,038 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 09:24:28,135 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 09:24:28,151 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:24:28,166 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 09:24:28,182 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 2.073 seconds (JVM running for 2.983)
+2021-05-06 09:24:32,702 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:24:32,703 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:24:32,707 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 09:24:32,728 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 09:24:32,909 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 09:25:54,116 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 18616 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 09:25:54,119 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 09:25:54,150 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 09:25:54,151 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 09:25:54,884 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 09:25:54,891 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:25:54,891 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 09:25:54,891 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 09:25:54,942 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 09:25:54,942 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 791 ms
+2021-05-06 09:25:55,446 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:25:55,483 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 09:25:55,588 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 09:25:55,634 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:25:55,658 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 09:25:55,676 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.839 seconds (JVM running for 2.395)
+2021-05-06 09:25:56,732 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:25:56,733 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:25:56,737 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 09:25:56,757 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 09:25:56,857 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 09:26:44,622 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 17560 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 09:26:44,622 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 09:26:44,660 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 09:26:44,661 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 09:26:45,215 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 09:26:45,219 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:26:45,220 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 09:26:45,220 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 09:26:45,262 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 09:26:45,262 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 601 ms
+2021-05-06 09:26:45,509 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:26:45,540 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 09:26:45,602 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 09:26:45,618 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:26:45,618 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 09:26:45,634 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.251 seconds (JVM running for 1.69)
+2021-05-06 09:26:48,188 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:26:48,189 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:26:48,193 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 09:26:50,040 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 09:26:50,117 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 09:30:05,702 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 8832 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 09:30:05,704 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 09:30:05,728 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 09:30:05,728 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 09:30:06,291 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 09:30:06,291 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:30:06,291 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 09:30:06,291 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 09:30:06,346 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 09:30:06,346 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 618 ms
+2021-05-06 09:30:06,600 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:30:06,631 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 09:30:06,687 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 09:30:06,687 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:30:06,710 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 09:30:06,718 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.254 seconds (JVM running for 1.708)
+2021-05-06 09:30:07,869 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:30:07,871 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:30:07,875 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 09:30:07,891 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 09:30:07,972 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 09:32:00,842 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 17712 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 09:32:00,844 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 09:32:00,872 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 09:32:00,873 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 09:32:01,452 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 09:32:01,458 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:32:01,458 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 09:32:01,458 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 09:32:01,501 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 09:32:01,501 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 628 ms
+2021-05-06 09:32:01,753 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:32:01,785 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 09:32:01,846 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 09:32:01,856 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:32:01,868 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 09:32:01,876 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.385 seconds (JVM running for 1.968)
+2021-05-06 09:32:03,515 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:32:03,517 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:32:03,520 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 09:32:03,536 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 09:32:03,616 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 09:35:05,312 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 16584 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 09:35:05,312 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 09:35:05,343 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 09:35:05,343 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 09:35:05,968 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 09:35:05,973 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:35:05,974 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 09:35:05,974 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 09:35:06,018 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 09:35:06,018 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 675 ms
+2021-05-06 09:35:06,269 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:35:06,299 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 09:35:06,359 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 09:35:06,369 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:35:06,381 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 09:35:06,389 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.398 seconds (JVM running for 1.997)
+2021-05-06 09:35:08,695 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:35:08,696 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:35:08,700 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 09:35:08,716 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 09:35:08,795 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 09:42:15,653 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 18276 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 09:42:15,655 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 09:42:15,683 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 09:42:15,683 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 09:42:16,242 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 09:42:16,247 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:42:16,247 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 09:42:16,247 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 09:42:16,293 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 09:42:16,293 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 610 ms
+2021-05-06 09:42:16,557 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 09:42:16,590 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 09:42:16,659 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 09:42:16,670 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 09:42:16,682 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 09:42:16,691 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.275 seconds (JVM running for 1.764)
+2021-05-06 09:42:17,564 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 09:42:17,565 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 09:42:17,570 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-05-06 09:42:17,596 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 09:42:17,710 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:15:25,998 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 9016 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:15:26,001 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:15:26,047 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:15:26,048 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:15:26,706 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:15:26,711 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:15:26,711 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:15:26,712 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:15:26,755 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:15:26,756 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 708 ms
+2021-05-06 10:15:27,041 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:15:27,073 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:15:27,138 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:15:27,148 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:15:27,161 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:15:27,169 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.434 seconds (JVM running for 1.915)
+2021-05-06 10:15:29,394 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:15:29,396 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:15:29,398 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
+2021-05-06 10:15:29,416 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:15:29,496 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:17:50,297 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 14788 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:17:50,299 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:17:50,329 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:17:50,329 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:17:50,922 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:17:50,927 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:17:50,928 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:17:50,928 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:17:50,970 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:17:50,971 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 642 ms
+2021-05-06 10:17:51,224 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:17:51,256 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:17:51,321 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:17:51,330 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:17:51,342 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:17:51,350 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.357 seconds (JVM running for 1.928)
+2021-05-06 10:17:53,365 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:17:53,366 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:17:53,372 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 6 ms
+2021-05-06 10:17:53,390 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:17:53,470 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:18:28,535 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 17076 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:18:28,538 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:18:28,582 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:18:28,583 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:18:29,254 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:18:29,260 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:18:29,260 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:18:29,260 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:18:29,301 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:18:29,301 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 718 ms
+2021-05-06 10:18:29,580 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:18:29,611 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:18:29,674 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:18:29,684 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:18:29,697 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:18:29,705 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.577 seconds (JVM running for 2.207)
+2021-05-06 10:18:29,802 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:18:29,802 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:18:29,807 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 10:18:29,825 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:18:29,911 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:20:18,787 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 5576 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:20:18,791 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:20:18,847 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:20:18,848 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:20:19,519 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:20:19,524 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:20:19,524 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:20:19,525 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:20:19,566 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:20:19,567 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 719 ms
+2021-05-06 10:20:19,826 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:20:19,858 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:20:19,918 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:20:19,928 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:20:19,941 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:20:19,949 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.534 seconds (JVM running for 2.132)
+2021-05-06 10:20:20,795 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:20:20,796 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:20:20,801 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-05-06 10:20:20,824 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:20:20,916 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:21:33,831 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 18452 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:21:33,838 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:21:33,881 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:21:33,881 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:21:34,556 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:21:34,565 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:21:34,566 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:21:34,566 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:21:34,620 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:21:34,620 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 738 ms
+2021-05-06 10:21:34,887 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:21:34,922 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:21:34,988 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:21:34,998 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:21:35,011 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:21:35,019 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.607 seconds (JVM running for 2.235)
+2021-05-06 10:21:35,170 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:21:35,172 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:21:35,177 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-05-06 10:21:35,196 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:21:35,278 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:22:01,455 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 15908 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:22:01,458 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:22:01,500 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:22:01,501 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:22:02,160 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:22:02,166 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:22:02,167 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:22:02,167 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:22:02,215 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:22:02,216 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 715 ms
+2021-05-06 10:22:02,464 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:22:02,495 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:22:02,556 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:22:02,566 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:22:02,578 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:22:02,586 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.593 seconds (JVM running for 2.256)
+2021-05-06 10:22:02,726 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:22:02,727 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:22:02,731 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 10:22:02,757 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:22:02,840 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:27:13,123 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 11332 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:27:13,125 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:27:13,154 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:27:13,155 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:27:13,862 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:27:13,867 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:27:13,868 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:27:13,868 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:27:13,910 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:27:13,910 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 755 ms
+2021-05-06 10:27:14,160 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:27:14,191 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:27:14,253 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:27:14,263 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:27:14,276 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:27:14,284 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.455 seconds (JVM running for 2.072)
+2021-05-06 10:27:18,302 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:27:18,303 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:27:18,306 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 10:27:18,324 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:27:18,405 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:28:26,912 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 16564 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:28:26,914 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:28:26,940 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:28:26,941 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:28:27,510 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:28:27,515 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:28:27,516 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:28:27,516 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:28:27,560 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:28:27,560 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 619 ms
+2021-05-06 10:28:27,816 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:28:27,848 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:28:27,914 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:28:27,923 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:28:27,936 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:28:27,944 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.276 seconds (JVM running for 1.729)
+2021-05-06 10:28:29,464 INFO [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:28:29,464 INFO [http-nio-8080-exec-5] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:28:29,468 INFO [http-nio-8080-exec-5] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 10:28:33,768 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:28:33,847 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:31:01,463 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 6820 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:31:01,465 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:31:01,497 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:31:01,497 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:31:02,237 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:31:02,242 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:31:02,242 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:31:02,242 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:31:02,282 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:31:02,282 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 784 ms
+2021-05-06 10:31:02,541 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:31:02,576 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:31:02,644 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:31:02,655 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:31:02,668 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:31:02,677 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.516 seconds (JVM running for 2.116)
+2021-05-06 10:31:03,443 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:31:03,444 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:31:03,447 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 10:31:05,621 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:31:05,701 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:34:13,906 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2612 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:34:13,907 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:34:13,938 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:34:13,939 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:34:14,598 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:34:14,604 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:34:14,604 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:34:14,605 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:34:14,656 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:34:14,656 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 717 ms
+2021-05-06 10:34:15,026 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:34:15,062 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:34:15,135 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:34:15,146 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:34:15,161 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:34:15,170 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.536 seconds (JVM running for 2.729)
+2021-05-06 10:34:15,378 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:34:15,379 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:34:15,383 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 10:34:19,068 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:34:19,159 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:34:36,442 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:34:36,443 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 10:34:36,447 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 10:43:28,453 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 11240 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:43:28,455 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:43:29,705 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:43:29,770 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:43:29,954 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.778 seconds (JVM running for 2.497)
+2021-05-06 10:43:30,256 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:43:30,430 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:43:30,478 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:43:30,479 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 10:43:30,486 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 10:44:13,032 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2276 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:44:13,034 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:44:13,061 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:44:13,061 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:44:13,664 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:44:13,669 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:44:13,670 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:44:13,670 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:44:13,714 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:44:13,715 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 654 ms
+2021-05-06 10:44:13,970 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:44:14,002 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:44:14,066 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:44:14,075 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:44:14,092 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:44:14,102 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.311 seconds (JVM running for 1.777)
+2021-05-06 10:44:17,924 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:44:17,925 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:44:17,929 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 10:44:17,946 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:44:18,027 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:46:03,211 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 1408 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:46:03,213 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:46:03,270 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:46:03,270 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:46:04,021 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:46:04,026 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:46:04,027 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:46:04,027 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:46:04,070 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:46:04,070 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 800 ms
+2021-05-06 10:46:04,330 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:46:04,363 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:46:04,428 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:46:04,437 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:46:04,450 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:46:04,458 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.527 seconds (JVM running for 2.182)
+2021-05-06 10:46:08,634 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:46:08,635 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:46:08,638 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 10:46:08,654 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:46:08,738 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:46:36,028 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 18500 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:46:36,032 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:46:36,080 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:46:36,080 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:46:36,714 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:46:36,719 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:46:36,720 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:46:36,720 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:46:36,761 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:46:36,762 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 681 ms
+2021-05-06 10:46:37,027 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:46:37,059 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:46:37,125 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:46:37,135 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:46:37,148 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:46:37,157 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.481 seconds (JVM running for 2.122)
+2021-05-06 10:46:37,176 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:46:37,177 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:46:37,180 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 10:46:37,197 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:46:37,280 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:46:54,005 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 12056 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:46:54,008 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:46:54,051 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:46:54,052 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:46:54,778 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:46:54,783 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:46:54,784 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:46:54,784 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:46:54,827 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:46:54,827 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 774 ms
+2021-05-06 10:46:55,077 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:46:55,107 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:46:55,168 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:46:55,177 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:46:55,190 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:46:55,198 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.539 seconds (JVM running for 2.231)
+2021-05-06 10:46:56,252 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:46:56,254 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:46:56,260 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 6 ms
+2021-05-06 10:46:56,279 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:46:56,360 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:47:11,329 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 13140 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:47:11,332 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:47:11,385 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:47:11,387 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:47:12,070 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:47:12,075 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:47:12,076 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:47:12,076 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:47:12,117 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:47:12,117 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 729 ms
+2021-05-06 10:47:12,373 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:47:12,404 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:47:12,465 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:47:12,475 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:47:12,487 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:47:12,495 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.468 seconds (JVM running for 2.093)
+2021-05-06 10:47:12,898 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:47:12,899 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:47:12,902 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 10:47:12,920 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:47:13,007 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:50:19,989 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2140 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:50:19,995 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:50:20,028 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 10:50:20,028 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 10:50:20,612 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:50:20,622 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:50:20,623 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:50:20,623 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:50:20,663 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:50:20,664 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 636 ms
+2021-05-06 10:50:20,922 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:50:20,954 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:50:21,034 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:50:21,044 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:50:21,057 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:50:21,065 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.348 seconds (JVM running for 1.803)
+2021-05-06 10:50:21,250 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 10:50:21,251 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 10:50:21,255 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 10:50:21,273 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:50:21,358 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:58:51,025 INFO [Thread-5] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:58:51,027 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 10:58:51,031 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 10:58:51,126 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2140 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:58:51,126 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:58:51,311 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 10:58:51,312 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:58:51,312 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 10:58:51,312 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 10:58:51,328 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 10:58:51,328 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 199 ms
+2021-05-06 10:58:51,406 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 6796 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:58:51,408 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:58:51,468 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:58:51,480 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:58:51,514 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 10:58:51,523 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 10:58:51,526 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 10:58:51,530 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 0.445 seconds (JVM running for 512.269)
+2021-05-06 10:58:51,532 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2021-05-06 10:58:52,650 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:58:52,720 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:58:52,916 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.841 seconds (JVM running for 2.547)
+2021-05-06 10:58:53,183 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:58:53,325 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:58:53,416 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:58:53,417 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 10:58:53,425 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 10:59:17,022 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 14000 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:59:17,024 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 10:59:18,222 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:59:18,286 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 10:59:18,466 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.727 seconds (JVM running for 2.415)
+2021-05-06 10:59:18,734 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 10:59:18,875 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 10:59:18,966 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 10:59:18,967 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 10:59:18,974 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 10:59:59,251 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 12608 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 10:59:59,254 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:00:00,915 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:00:01,068 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:00:01,315 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 2.337 seconds (JVM running for 3.001)
+2021-05-06 11:00:01,565 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:00:01,725 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:00:01,821 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:00:01,823 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:00:01,830 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:05:05,833 INFO [Thread-8] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:05,890 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2140 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:05:05,890 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:05:06,049 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:05:06,052 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:05:06,053 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:05:06,053 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:05:06,068 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:05:06,068 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 175 ms
+2021-05-06 11:05:06,161 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:06,171 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:05:06,201 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:05:06,209 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:05:06,211 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:05:06,215 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 0.349 seconds (JVM running for 886.953)
+2021-05-06 11:05:06,216 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
+2021-05-06 11:05:06,430 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 18844 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:05:06,432 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:05:07,620 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:07,681 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:05:07,852 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.73 seconds (JVM running for 2.472)
+2021-05-06 11:05:08,113 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:05:08,248 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:05:08,295 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:08,296 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:05:08,302 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:05:23,444 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 11532 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:05:23,446 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:05:24,635 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:24,701 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:05:24,874 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.714 seconds (JVM running for 2.421)
+2021-05-06 11:05:25,120 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:05:25,251 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:05:25,336 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:25,338 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:05:25,348 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:05:41,734 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 16776 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:05:41,735 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:05:42,920 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:42,993 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:05:43,177 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.723 seconds (JVM running for 2.414)
+2021-05-06 11:05:43,436 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:05:43,570 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:05:43,638 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:05:43,639 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:05:43,648 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:06:07,029 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 5784 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:06:07,031 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:06:08,244 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:06:08,312 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:06:08,494 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:61] Started MapperTest in 1.752 seconds (JVM running for 2.431)
+2021-05-06 11:06:08,740 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:06:08,882 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:06:08,972 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:06:08,974 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:06:08,982 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:07:42,146 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:07:42,147 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:07:42,150 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 2 ms
+2021-05-06 11:07:42,152 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
+2021-05-06 11:07:42,154 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
+2021-05-06 11:08:34,959 INFO [Thread-13] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:08:34,960 INFO [Thread-13] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
+2021-05-06 11:08:34,961 INFO [Thread-13] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
+2021-05-06 11:08:35,019 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2140 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:08:35,020 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:08:35,167 INFO [main] c.h.f.MapperTest [StartupInfoLogger.java:55] Starting MapperTest on DESKTOP-IRK0KCA with PID 13200 (started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:08:35,170 INFO [main] c.h.f.MapperTest [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:08:35,203 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:08:35,206 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:08:35,207 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:08:35,208 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:08:35,222 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:08:35,222 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 200 ms
+2021-05-06 11:08:35,306 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:08:35,326 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:08:35,327 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2021-05-06 11:08:35,331 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-05-05 16:43:04,924 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 7744 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 16:43:04,926 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 16:43:04,954 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 16:43:04,955 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 16:43:05,536 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 16:43:05,541 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 16:43:05,541 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 16:43:05,541 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 16:43:05,582 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 16:43:05,583 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 628 ms
-2021-05-05 16:43:05,851 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 16:43:05,885 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 16:43:05,960 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 16:43:05,969 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 16:43:05,981 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 16:43:06,007 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.32 seconds (JVM running for 1.775)
-2021-05-05 16:43:49,425 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 16:43:49,426 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 16:43:49,436 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 9 ms
-2021-05-05 16:48:39,818 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 3064 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 16:48:39,822 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 16:48:39,857 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 16:48:39,858 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 16:48:40,524 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 16:48:40,529 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 16:48:40,529 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 16:48:40,529 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 16:48:40,577 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 16:48:40,578 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 720 ms
-2021-05-05 16:48:40,847 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 16:48:40,881 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 16:48:40,954 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 16:48:40,964 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 16:48:40,979 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 16:48:40,989 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.511 seconds (JVM running for 2.366)
-2021-05-05 16:48:45,455 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 16:48:45,456 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 16:48:45,463 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 7 ms
-2021-05-05 16:49:53,130 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 6544 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 16:49:53,133 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 16:49:53,170 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 16:49:53,170 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 16:49:53,837 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 16:49:53,843 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 16:49:53,843 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 16:49:53,844 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 16:49:53,887 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 16:49:53,888 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 718 ms
-2021-05-05 16:49:54,123 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 16:49:54,152 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 16:49:54,214 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 16:49:54,224 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 16:49:54,238 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 16:49:54,246 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.49 seconds (JVM running for 2.242)
-2021-05-05 16:49:59,576 INFO [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 16:49:59,577 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 16:49:59,582 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
-2021-05-05 17:08:07,025 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 27604 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 17:08:07,026 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 17:08:07,054 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 17:08:07,054 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 17:08:07,724 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 17:08:07,729 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 17:08:07,729 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 17:08:07,730 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 17:08:07,773 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 17:08:07,773 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 718 ms
-2021-05-05 17:08:08,054 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 17:08:08,091 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 17:08:08,174 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 17:08:08,186 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 17:08:08,200 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 17:08:08,210 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.416 seconds (JVM running for 2.075)
-2021-05-05 17:08:13,059 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 17:08:13,060 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 17:08:13,064 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
-2021-05-05 17:11:03,897 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 27336 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 17:11:03,899 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 17:11:03,929 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 17:11:03,929 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 17:11:04,485 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 17:11:04,490 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 17:11:04,490 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 17:11:04,490 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 17:11:04,533 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 17:11:04,534 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 604 ms
-2021-05-05 17:11:04,782 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 17:11:04,813 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 17:11:04,875 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 17:11:04,885 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 17:11:04,898 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 17:11:04,905 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.249 seconds (JVM running for 1.708)
-2021-05-05 17:11:11,221 INFO [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 17:11:11,221 INFO [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 17:11:11,225 INFO [http-nio-8080-exec-6] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
-2021-05-05 17:13:47,601 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 12116 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 17:13:47,604 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 17:13:47,633 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 17:13:47,634 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 17:13:48,226 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 17:13:48,231 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 17:13:48,231 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 17:13:48,232 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 17:13:48,280 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 17:13:48,280 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 646 ms
-2021-05-05 17:13:48,558 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 17:13:48,591 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 17:13:48,661 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 17:13:48,671 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 17:13:48,684 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 17:13:48,691 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.354 seconds (JVM running for 1.894)
-2021-05-05 17:13:52,954 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 17:13:52,955 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 17:13:52,958 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
-2021-05-05 17:14:15,014 INFO [http-nio-8080-exec-8] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-05 17:14:15,361 INFO [http-nio-8080-exec-8] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-05 18:15:48,904 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 26324 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 18:15:48,906 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 18:15:48,934 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 18:15:48,934 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 18:15:49,531 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 18:15:49,536 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:15:49,536 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 18:15:49,537 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 18:15:49,579 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 18:15:49,579 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 644 ms
-2021-05-05 18:15:49,827 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 18:15:49,858 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 18:15:49,919 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 18:15:49,930 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:15:49,944 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 18:15:49,951 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.281 seconds (JVM running for 1.742)
-2021-05-05 18:15:59,581 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 18:15:59,582 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 18:15:59,587 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
-2021-05-05 18:16:24,530 INFO [http-nio-8080-exec-8] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-05 18:16:24,657 INFO [http-nio-8080-exec-8] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-05 18:16:36,446 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 14392 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 18:16:36,449 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 18:16:36,478 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 18:16:36,478 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 18:16:37,083 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 18:16:37,089 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:16:37,089 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 18:16:37,090 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 18:16:37,135 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 18:16:37,135 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 656 ms
-2021-05-05 18:16:37,452 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 18:16:37,485 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 18:16:37,551 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 18:16:37,561 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:16:37,575 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 18:16:37,583 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.385 seconds (JVM running for 2.523)
-2021-05-05 18:17:11,705 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-05 18:17:14,574 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 17308 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 18:17:14,576 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 18:17:14,605 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 18:17:14,605 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 18:17:15,213 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 18:17:15,219 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:17:15,220 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 18:17:15,220 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 18:17:15,266 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 18:17:15,267 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 662 ms
-2021-05-05 18:17:15,549 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 18:17:15,585 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 18:17:15,655 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 18:17:15,666 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:17:15,680 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 18:17:15,688 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.414 seconds (JVM running for 2.03)
-2021-05-05 18:17:21,417 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 18:17:21,417 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 18:17:21,421 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
-2021-05-05 18:17:35,477 INFO [http-nio-8080-exec-7] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-05 18:17:35,581 INFO [http-nio-8080-exec-7] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-05 18:18:26,874 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-05 18:18:26,874 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2021-05-05 18:18:26,879 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2021-05-05 18:52:05,869 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 10536 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 18:52:05,871 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 18:52:05,909 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 18:52:05,910 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 18:52:06,625 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 18:52:06,633 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:52:06,634 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 18:52:06,634 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 18:52:06,682 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 18:52:06,682 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 772 ms
-2021-05-05 18:52:06,989 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 18:52:07,026 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 18:52:07,106 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 18:52:07,119 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:52:07,137 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 18:52:07,145 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.589 seconds (JVM running for 2.176)
-2021-05-05 18:52:09,244 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 18:52:09,245 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 18:52:09,250 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
-2021-05-05 18:52:25,710 INFO [http-nio-8080-exec-7] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-05 18:52:25,808 INFO [http-nio-8080-exec-7] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-05 18:57:54,555 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2932 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 18:57:54,557 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 18:57:54,595 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 18:57:54,596 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 18:57:55,423 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 18:57:55,431 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:57:55,431 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 18:57:55,431 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 18:57:55,483 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 18:57:55,483 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 885 ms
-2021-05-05 18:57:55,787 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 18:57:55,824 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 18:57:55,899 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 18:57:55,909 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 18:57:55,926 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 18:57:55,936 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.734 seconds (JVM running for 2.443)
-2021-05-05 18:57:57,324 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 18:57:57,325 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 18:57:57,328 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
-2021-05-05 18:58:08,819 INFO [http-nio-8080-exec-5] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-05 18:58:08,907 INFO [http-nio-8080-exec-5] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-05 19:35:51,786 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 23420 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 19:35:51,788 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 19:35:51,815 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 19:35:51,815 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 19:35:52,400 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 19:35:52,405 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 19:35:52,405 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 19:35:52,406 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 19:35:52,445 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 19:35:52,446 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 630 ms
-2021-05-05 19:35:52,688 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 19:35:52,717 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 19:35:52,777 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 19:35:52,786 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 19:35:52,798 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 19:35:52,806 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.272 seconds (JVM running for 1.915)
-2021-05-05 19:35:59,307 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 19:35:59,308 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 19:35:59,315 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 6 ms
-2021-05-05 19:35:59,335 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-05 19:35:59,429 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2021-05-05 19:37:16,974 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 29488 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
-2021-05-05 19:37:16,976 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
-2021-05-05 19:37:17,010 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-05-05 19:37:17,010 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-05-05 19:37:17,694 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
-2021-05-05 19:37:17,699 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
-2021-05-05 19:37:17,699 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2021-05-05 19:37:17,700 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-05-05 19:37:17,745 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2021-05-05 19:37:17,745 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 735 ms
-2021-05-05 19:37:18,013 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-05 19:37:18,045 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
-2021-05-05 19:37:18,110 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
-2021-05-05 19:37:18,121 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
-2021-05-05 19:37:18,135 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
-2021-05-05 19:37:18,144 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.488 seconds (JVM running for 2.1)
-2021-05-05 19:37:28,034 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-05 19:37:28,034 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
-2021-05-05 19:37:28,038 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
-2021-05-05 19:37:28,057 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2021-05-05 19:37:28,145 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:08:36,363 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:08:36,431 INFO [main] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:08:36,439 INFO [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-06 11:09:01,314 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 12056 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:09:01,316 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:09:01,342 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:09:01,342 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:09:01,899 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:09:01,904 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:09:01,905 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:09:01,905 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:09:01,947 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:09:01,947 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 604 ms
+2021-05-06 11:09:02,198 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:09:02,229 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:09:02,299 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:09:02,309 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:09:02,322 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:09:02,329 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.251 seconds (JVM running for 1.703)
+2021-05-06 11:09:32,062 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:09:32,063 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:09:32,066 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 11:09:32,085 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:09:32,168 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:26:49,042 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 16388 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:26:49,044 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:26:49,072 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:26:49,072 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:26:49,662 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:26:49,667 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:26:49,667 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:26:49,668 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:26:49,709 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:26:49,710 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 637 ms
+2021-05-06 11:26:50,003 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:26:50,034 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:26:50,100 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:26:50,112 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:26:50,127 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:26:50,134 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.335 seconds (JVM running for 1.949)
+2021-05-06 11:26:51,993 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:26:51,994 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:26:51,997 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 11:26:52,014 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:26:52,096 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:34:04,061 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 18300 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:34:04,064 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:34:04,093 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:34:04,093 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:34:04,667 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:34:04,673 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:34:04,673 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:34:04,673 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:34:04,717 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:34:04,717 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 623 ms
+2021-05-06 11:34:04,967 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:34:05,000 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:34:05,065 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:34:05,075 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:34:05,088 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:34:05,096 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.28 seconds (JVM running for 1.738)
+2021-05-06 11:34:09,923 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 2096 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:34:09,925 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:34:09,957 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:34:09,958 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:34:10,580 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:34:10,586 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:34:10,586 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:34:10,587 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:34:10,631 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:34:10,631 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 673 ms
+2021-05-06 11:34:10,925 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:34:10,959 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:34:11,027 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:34:11,038 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:34:11,053 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:34:11,062 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.485 seconds (JVM running for 2.07)
+2021-05-06 11:34:15,082 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:34:15,084 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:34:15,088 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 11:34:15,106 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:34:15,194 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:35:18,480 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:35:18,481 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:35:18,486 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:35:20,781 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 15924 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:35:20,783 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:35:20,814 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:35:20,814 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:35:21,458 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:35:21,463 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:35:21,464 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:35:21,464 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:35:21,514 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:35:21,515 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 701 ms
+2021-05-06 11:35:21,815 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:35:21,851 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:35:21,920 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:35:21,930 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:35:21,945 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:35:21,953 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.465 seconds (JVM running for 2.046)
+2021-05-06 11:35:22,836 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:35:22,838 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:35:22,846 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 8 ms
+2021-05-06 11:35:22,877 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:35:22,991 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:35:40,920 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:35:40,921 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:35:40,927 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:35:43,056 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 18656 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:35:43,058 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:35:43,090 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:35:43,091 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:35:43,730 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:35:43,736 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:35:43,736 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:35:43,737 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:35:43,785 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:35:43,786 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 695 ms
+2021-05-06 11:35:44,077 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:35:44,115 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:35:44,189 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:35:44,200 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:35:44,214 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:35:44,223 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.454 seconds (JVM running for 2.012)
+2021-05-06 11:35:45,857 INFO [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:35:45,858 INFO [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:35:45,863 INFO [http-nio-8080-exec-4] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-05-06 11:35:48,665 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:35:48,754 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:36:44,595 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:36:44,596 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:36:44,600 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:36:47,125 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 17788 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:36:47,128 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:36:47,173 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:36:47,174 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:36:48,017 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:36:48,023 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:36:48,024 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:36:48,024 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:36:48,070 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:36:48,070 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 896 ms
+2021-05-06 11:36:48,376 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:36:48,412 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:36:48,482 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:36:48,493 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:36:48,508 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:36:48,516 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.842 seconds (JVM running for 2.53)
+2021-05-06 11:36:49,613 INFO [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:36:49,613 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:36:49,617 INFO [http-nio-8080-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 11:36:50,597 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:36:50,691 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:39:15,097 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:39:15,098 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:39:15,102 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:39:17,948 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 8216 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:39:17,950 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:39:17,982 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:39:17,982 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:39:18,649 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:39:18,654 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:39:18,655 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:39:18,655 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:39:18,699 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:39:18,700 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 717 ms
+2021-05-06 11:39:18,996 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:39:19,034 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:39:19,107 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:39:19,118 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:39:19,133 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:39:19,141 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.502 seconds (JVM running for 2.078)
+2021-05-06 11:39:20,188 INFO [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:39:20,188 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:39:20,194 INFO [http-nio-8080-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 6 ms
+2021-05-06 11:39:21,886 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:39:21,978 INFO [http-nio-8080-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:39:52,589 INFO [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:218] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:39:52,590 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2021-05-06 11:39:52,596 INFO [SpringContextShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2021-05-06 11:39:54,724 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 15516 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:39:54,727 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:39:54,753 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:39:54,754 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:39:55,362 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:39:55,367 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:39:55,368 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:39:55,368 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:39:55,410 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:39:55,410 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 656 ms
+2021-05-06 11:39:55,670 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:39:55,701 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:39:55,766 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:39:55,775 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:39:55,788 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:39:55,796 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.334 seconds (JVM running for 1.823)
+2021-05-06 11:39:55,813 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:39:55,814 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:39:55,817 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 11:39:55,832 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:39:55,916 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 11:40:54,891 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 1136 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 11:40:54,893 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 11:40:54,919 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 11:40:54,921 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 11:40:55,492 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 11:40:55,497 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:40:55,497 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 11:40:55,498 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 11:40:55,539 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 11:40:55,539 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 618 ms
+2021-05-06 11:40:55,793 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 11:40:55,827 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 11:40:55,892 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 11:40:55,902 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 11:40:55,915 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 11:40:55,923 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.27 seconds (JVM running for 1.721)
+2021-05-06 11:41:00,704 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 11:41:00,706 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 11:41:00,711 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-05-06 11:41:00,727 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 11:41:00,809 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 14:16:48,119 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 16728 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 14:16:48,121 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 14:16:48,152 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 14:16:48,152 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 14:16:48,722 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 14:16:48,727 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:16:48,728 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 14:16:48,728 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 14:16:48,769 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 14:16:48,769 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 617 ms
+2021-05-06 14:16:49,016 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 14:16:49,047 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 14:16:49,111 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 14:16:49,121 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:16:49,133 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 14:16:49,142 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.253 seconds (JVM running for 1.742)
+2021-05-06 14:17:00,807 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 14:17:00,808 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 14:17:00,812 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 14:17:00,828 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 14:17:00,907 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 14:33:18,763 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 15724 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 14:33:18,766 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 14:33:18,802 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 14:33:18,802 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 14:33:19,376 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 14:33:19,381 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:33:19,382 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 14:33:19,382 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 14:33:19,422 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 14:33:19,422 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 619 ms
+2021-05-06 14:33:19,679 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 14:33:19,711 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 14:33:19,773 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 14:33:19,782 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:33:19,795 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 14:33:19,802 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.376 seconds (JVM running for 1.935)
+2021-05-06 14:33:23,128 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 14:33:23,130 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 14:33:23,133 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 14:33:23,149 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 14:33:23,227 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 14:37:58,946 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 14100 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 14:37:58,949 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 14:37:58,999 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 14:37:59,000 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 14:37:59,594 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 14:37:59,598 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:37:59,599 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 14:37:59,599 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 14:37:59,642 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 14:37:59,642 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 640 ms
+2021-05-06 14:37:59,882 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 14:37:59,912 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 14:37:59,972 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 14:37:59,981 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:37:59,995 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 14:38:00,002 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.389 seconds (JVM running for 1.986)
+2021-05-06 14:38:01,362 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 14:38:01,363 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 14:38:01,366 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 3 ms
+2021-05-06 14:38:01,384 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 14:38:01,465 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 14:39:55,815 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 19820 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 14:39:55,818 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 14:39:55,851 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 14:39:55,852 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 14:39:56,490 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 14:39:56,495 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:39:56,496 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 14:39:56,496 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 14:39:56,537 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 14:39:56,538 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 684 ms
+2021-05-06 14:39:56,787 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 14:39:56,819 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 14:39:56,884 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 14:39:56,894 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:39:56,906 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 14:39:56,914 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.413 seconds (JVM running for 1.955)
+2021-05-06 14:39:57,994 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 14:39:57,995 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 14:39:58,000 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 5 ms
+2021-05-06 14:39:58,016 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 14:39:58,110 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2021-05-06 14:41:31,165 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:55] Starting FrequencyApplication on DESKTOP-IRK0KCA with PID 15444 (E:\workspace_idea\frequency\target\classes started by HIT in E:\workspace_idea\frequency)
+2021-05-06 14:41:31,168 INFO [restartedMain] c.h.f.FrequencyApplication [SpringApplication.java:651] No active profile set, falling back to default profiles: default
+2021-05-06 14:41:31,204 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-06 14:41:31,205 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:225] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-06 14:41:31,774 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2021-05-06 14:41:31,779 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:41:31,779 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2021-05-06 14:41:31,779 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-06 14:41:31,819 INFO [restartedMain] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2021-05-06 14:41:31,820 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:285] Root WebApplicationContext: initialization completed in 615 ms
+2021-05-06 14:41:32,068 INFO [restartedMain] o.s.s.c.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java:181] Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-06 14:41:32,099 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:58] Adding welcome page template: index
+2021-05-06 14:41:32,161 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:58] LiveReload server is running on port 35729
+2021-05-06 14:41:32,170 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2021-05-06 14:41:32,185 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path '/frequency'
+2021-05-06 14:41:32,193 INFO [restartedMain] c.h.f.FrequencyApplication [StartupInfoLogger.java:61] Started FrequencyApplication in 1.333 seconds (JVM running for 1.916)
+2021-05-06 14:41:34,451 INFO [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/frequency] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-06 14:41:34,452 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:525] Initializing Servlet 'dispatcherServlet'
+2021-05-06 14:41:34,456 INFO [http-nio-8080-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:547] Completed initialization in 4 ms
+2021-05-06 14:41:34,476 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2021-05-06 14:41:34,557 INFO [http-nio-8080-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.

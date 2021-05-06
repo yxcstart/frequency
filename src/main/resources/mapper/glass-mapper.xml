@@ -6,13 +6,46 @@
     <sql id="selectFields">
         `id`,`width`,`height`,`thick`,`elasticModulus`,`poissonRatio`,`upper`,`highThreshold`,`lowThreshold`,`lower`
     </sql>
+    <sql id="insertFields">
+        `width`,`height`,`thick`,`elasticModulus`,`poissonRatio`,`upper`,`highThreshold`,`lowThreshold`,`lower`
+    </sql>
     <select id="queryGlass" resultType="Glass">
         select <include refid="selectFields"></include>
         from glass
-        where width=#{width}
+        where status=1
+        and width=#{width}
         and height=#{height}
         and thick=#{thick}
     </select>
-
+    <select id="findGlassById" resultType="Glass">
+        select <include refid="selectFields"></include>
+        from glass
+        where id=#{id}
+    </select>
+    <select id="queryGlasses" resultType="Glass">
+        select <include refid="selectFields"></include>
+        from glass
+        where status=1
+        order by width,height
+        limit #{offset},#{limit}
+    </select>
+    <select id="findGlassesRows" resultType="int">
+        select count(id)
+        from glass
+        where status=1
+    </select>
+    <update id="insertGlass" parameterType="Glass">
+        insert into glass(<include refid="insertFields"></include>)
+        values (#{width},#{height},#{thick},#{elasticModulus},#{poissonRatio},#{upper},#{highThreshold},#{lowThreshold},#{lower})
+    </update>
+    <update id="updateGlass" >
+        update glass set width=#{width},height=#{height},thick=#{thick},elasticModulus=#{elasticModulus},poissonRatio=#{poissonRatio},
+                         `upper`=#{upper},highThreshold=#{highThreshold},lowThreshold=#{lowThreshold},`lower`=#{lower}
+        where `id`=#{id}
+    </update>
+    <update id="deleteGlass">
+        update glass set status=#{status}
+        where id=#{id}
+    </update>
 
 </mapper>

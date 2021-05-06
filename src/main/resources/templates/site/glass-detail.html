@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" type="image/x-icon" th:href="@{/img/logo-blue.png}"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" th:href="@{/css/global.css}" />
+	<link rel="stylesheet" th:href="@{/css/discuss-detail.css}" />
+	<link rel="stylesheet" th:href="@{/css/login.css}" />
+	<title>玻璃模态数据详情</title>
+</head>
+<body>
+	<div class="nk-container">
+		<!-- 头部 -->
+		<header class="bg-dark sticky-top" th:replace="index::header">
+			<div class="container">
+				<!-- 导航 -->
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<!-- logo -->
+					<a class="navbar-brand" href="#"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- 功能 -->
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item ml-3 btn-group-vertical">
+								<a class="nav-link" href="../index.html">首页</a>
+							</li>
+							<li class="nav-item ml-3 btn-group-vertical">
+								<a class="nav-link position-relative" href="letter.html">消息<span class="badge badge-danger">12</span></a>
+							</li>
+							<li class="nav-item ml-3 btn-group-vertical">
+								<a class="nav-link" href="register.html">注册</a>
+							</li>
+							<li class="nav-item ml-3 btn-group-vertical">
+								<a class="nav-link" href="login.html">登录</a>
+							</li>
+							<li class="nav-item ml-3 btn-group-vertical dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img src="http://images.nowcoder.com/head/1t.png" class="rounded-circle" style="width:30px;"/>
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item text-center" href="profile.html">个人主页</a>
+									<a class="dropdown-item text-center" href="setting.html">账号设置</a>
+									<a class="dropdown-item text-center" href="login.html">退出登录</a>
+									<div class="dropdown-divider"></div>
+									<span class="dropdown-item text-center text-secondary">nowcoder</span>
+								</div>
+							</li>
+						</ul>
+						<!-- 搜索 -->
+						<form class="form-inline my-2 my-lg-0" action="search.html">
+							<input class="form-control mr-sm-2" type="search" aria-label="Search" />
+							<button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜索</button>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- 内容 -->
+		<div class="main">
+			<!-- 帖子详情 -->
+			<div class="container">
+				<!-- 标题 -->
+				<h6 class="mb-4">
+					<img src="http://static.nowcoder.com/images/img/icons/ico-discuss.png"/>
+					<span th:utext="${glass.width}+'×'+${glass.height}">备战春招，面试刷题跟他复习，一个月全搞定！</span>
+					<div class="float-right">
+<!--						<button type="button" class="btn btn-danger btn-sm">置顶</button>-->
+<!--						<button type="button" class="btn btn-danger btn-sm">加精</button>-->
+						<button type="button" id="delete" onclick="deleteGlass()" class="btn btn-danger btn-sm">删除</button>
+						<input type="hidden" id="deleteId" th:value="${glass.id}">
+					</div>
+				</h6>
+				<!-- 作者 -->
+				<div class="media pb-3 border-bottom">
+<!--					<a href="profile.html">-->
+<!--						<img src="http://images.nowcoder.com/head/1t.png" class="align-self-start mr-4 rounded-circle user-header" alt="用户头像" >-->
+<!--					</a>-->
+					<div class="media-body">
+						<div class="mt-0 text-warning">现有数据</div>
+						<div class="text-muted mt-3">
+<!--							发布于 <b>2019-04-15 15:32:18</b>-->
+<!--							<ul class="d-inline float-right">-->
+<!--								<li class="d-inline ml-2"><a href="#" class="text-primary">赞 11</a></li>-->
+<!--								<li class="d-inline ml-2">|</li>-->
+<!--								<li class="d-inline ml-2"><a href="#replyform" class="text-primary">回帖 7</a></li>-->
+<!--							</ul>-->
+						</div>
+					</div>
+				</div>	
+				<!-- 正文 -->
+				<div class="mt-4 mb-3 content">
+					<div class="form-group">
+						<label for="width" class="col-form-label">宽度(mm)：</label>
+						<span id="width" th:text="${glass.width}"></span>
+					</div>
+					<div class="form-group">
+						<label for="height" class="col-form-label">高度(mm)：</label>
+						<span id="height" th:text="${glass.height}"></span>
+					</div>
+					<div class="form-group">
+						<label for="thick" class="col-form-label">厚度(mm)：</label>
+						<span id="thick" th:text="${glass.thick}"></span>
+					</div>
+					<div class="form-group">
+						<label for="elasticModulus" class="col-form-label">弹性模量(MPa)：</label>
+						<span id="elasticModulus" th:text="${glass.elasticModulus}"></span>
+					</div>
+					<div class="form-group">
+						<label for="poissonRatio" class="col-form-label">泊松比：</label>
+						<span id="poissonRatio" th:text="${glass.poissonRatio}"></span>
+					</div>
+					<div class="form-group">
+						<label for="upper" class="col-form-label">频率上限(Hz)：</label>
+						<span id="upper" th:text="${glass.upper}"></span>
+					</div>
+					<div class="form-group">
+						<label for="highThreshold" class="col-form-label">临界频率A(Hz)：</label>
+						<span id="highThreshold" th:text="${glass.highThreshold}"></span>
+					</div>
+					<div class="form-group">
+						<label for="lowThreshold" class="col-form-label">临界频率B(Hz)：</label>
+						<span id="lowThreshold" th:text="${glass.lowThreshold}"></span>
+					</div>
+					<div class="form-group">
+						<label for="lower" class="col-form-label">频率下限(Hz)：</label>
+						<span id="lower" th:text="${glass.lower}"></span>
+					</div>
+				</div>
+			</div>
+			<!-- 回帖 -->
+			<div class="container mt-3">
+				<!-- 回帖数量 -->
+				<div class="row">
+					<div class="col-8">
+						<h6><b class="square"></b> 修改数据</h6>
+					</div>
+				</div>
+				<!-- 回帖列表 -->
+				<ul class="list-unstyled mt-4">
+					<form class="mt-5" method="post" th:action="@{|/update/${glass.id}|}">
+						<div class="form-group">
+							<label for="width1" class="col-form-label">宽度：</label>
+							<input type="text" class="form-control" name="width" placeholder="请输入玻璃宽度(mm)"
+								   th:value="${glass.width}" required id="width1">
+						</div>
+						<div class="form-group">
+							<label for="height1" class="col-form-label">高度：</label>
+							<input type="text" class="form-control" name="height" placeholder="请输入玻璃高度(mm)"
+								   th:value="${glass.height}" required id="height1">
+						</div>
+						<div class="form-group">
+							<label for="thick1" class="col-form-label">厚度：</label>
+							<input type="text" class="form-control" name="thick" placeholder="请输入玻璃厚度(mm)"
+								   th:value="${glass.thick}" required id="thick1">
+						</div>
+						<div class="form-group">
+							<label for="elasticModulus1" class="col-form-label">弹性模量：</label>
+							<input type="text" class="form-control" name="elasticModulus" placeholder="请输入玻璃弹性模量(MPa)"
+								   th:value="${glass.elasticModulus}" required id="elasticModulus1">
+						</div>
+						<div class="form-group">
+							<label for="poissonRatio1" class="col-form-label">泊松比：</label>
+							<input type="text" class="form-control" name="poissonRatio" placeholder="请输入玻璃泊松比"
+								   th:value="${glass.poissonRatio}" required id="poissonRatio1">
+						</div>
+						<div class="form-group">
+							<label for="upper1" class="col-form-label">频率上限：</label>
+							<input type="text" class="form-control" name="upper" placeholder="请输入玻璃频率上限(Hz)"
+								   th:value="${glass.upper}" required id="upper1">
+						</div>
+						<div class="form-group">
+							<label for="highThreshold1" class="col-form-label">临界频率A：</label>
+							<input type="text" class="form-control" name="highThreshold" placeholder="请输入玻璃临界频率A(Hz)"
+								   th:value="${glass.highThreshold}" required id="highThreshold1">
+						</div>
+						<div class="form-group">
+							<label for="lowThreshold1" class="col-form-label">临界频率B：</label>
+							<input type="text" class="form-control" name="lowThreshold" placeholder="请输入玻璃临界频率B(Hz)"
+								   th:value="${glass.lowThreshold}" required id="lowThreshold1">
+						</div>
+						<div class="form-group">
+							<label for="lower1" class="col-form-label">频率下限：</label>
+							<input type="text" class="form-control" name="lower" placeholder="请输入玻璃频率下限(Hz)"
+								   th:value="${glass.lower}" required id="lower1">
+						</div>
+						<div class="form-group row mt-4" >
+							<button type="submit" class="btn btn-info text-white form-control">立即修改</button>
+						</div>
+					</form>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 尾部 -->
+		<footer class="bg-dark" th:replace="index::footer">
+			<div class="container">
+				<div class="row">
+					<!-- 二维码 -->
+					<div class="col-4 qrcode">
+						<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />
+					</div>
+					<!-- 公司信息 -->
+					<div class="col-8 detail-info">
+						<div class="row">
+							<div class="col">
+								<ul class="nav">
+									<li class="nav-item">
+										<a class="nav-link text-light" href="#">关于我们</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-light" href="#">加入我们</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-light" href="#">意见反馈</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-light" href="#">企业服务</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-light" href="#">联系我们</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-light" href="#">免责声明</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link text-light" href="#">友情链接</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col">
+								<ul class="nav btn-group-vertical company-info">
+									<li class="nav-item text-white-50">
+										公司地址：北京市朝阳区大屯路东金泉时代3-2708北京牛客科技有限公司
+									</li>
+									<li class="nav-item text-white-50">
+										联系方式：010-60728802(电话)&nbsp;&nbsp;&nbsp;&nbsp;admin@nowcoder.com
+									</li>
+									<li class="nav-item text-white-50">
+										牛客科技©2018 All rights reserved
+									</li>
+									<li class="nav-item text-white-50">
+										京ICP备14055008号-4 &nbsp;&nbsp;&nbsp;&nbsp;
+										<img src="http://static.nowcoder.com/company/images/res/ghs.png" style="width:18px;" />
+										京公网安备 11010502036488号
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script th:src="@{/js/global.js}"></script>
+	<script>
+		function deleteGlass() {
+			var glassId=$("#deleteId").val();
+			window.location=CONTEXT_PATH+"/delete/"+glassId;
+		}
+	</script>
+</body>
+</html>

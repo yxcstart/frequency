@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="https://static.nowcoder.com/images/logo_87_87.png"/>
+	<link rel="icon" type="image/x-icon" th:href="@{/img/logo-blue.png}"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="../css/global.css" />
-	<link rel="stylesheet" href="../css/letter.css" />
-	<title>牛客网-私信详情</title>
+	<link rel="stylesheet" th:href="@{/css/global.css}" />
+	<link rel="stylesheet" th:href="@{/css/login.css}" />
+	<title>数据库管理</title>
 </head>
 <body>
 	<div class="nk-container">
 		<!-- 头部 -->
-		<header class="bg-dark sticky-top">
+		<header class="bg-dark sticky-top" th:replace="index::header">
 			<div class="container">
 				<!-- 导航 -->
 				<nav class="navbar navbar-expand-lg navbar-dark">
@@ -31,7 +31,7 @@
 								<a class="nav-link position-relative" href="letter.html">消息<span class="badge badge-danger">12</span></a>
 							</li>
 							<li class="nav-item ml-3 btn-group-vertical">
-								<a class="nav-link" href="register.html">注册</a>
+								<a class="nav-link" href="glass.html">注册</a>
 							</li>
 							<li class="nav-item ml-3 btn-group-vertical">
 								<a class="nav-link" href="login.html">登录</a>
@@ -62,21 +62,25 @@
 		<!-- 内容 -->
 		<div class="main">
 			<div class="container">
-				<div class="row">
-					<div class="col-8">
-						<h6><b class="square"></b> 来自 <i class="text-success">落基山脉下的闲人</i> 的私信</h6>
-					</div>
-					<div class="col-4 text-right">
-						<button type="button" class="btn btn-secondary btn-sm" onclick="location.href='letter.html';">返回</button>
-						<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#sendModal">给TA私信</button>
-					</div>
+				<div class="position-relative">
+					<!-- 筛选条件 -->
+					<ul class="nav nav-tabs mb-3">
+						<li class="nav-item">
+							<a class="nav-link active" href="#">数据库</a>
+						</li>
+<!--						<li class="nav-item">-->
+<!--							<a class="nav-link" href="#">最热</a>-->
+<!--						</li>-->
+						<button type="button" class="btn btn-primary btn-sm position-absolute rt-0" data-toggle="modal" data-target="#publishModal" th:if="${loginUser!=null}">添加数据</button>
+					</ul>
+
 				</div>
 				<!-- 弹出框 -->
-				<div class="modal fade" id="sendModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="publishModal" tabindex="-1" role="dialog" aria-labelledby="publishModalLabel" aria-hidden="true">
 					<div class="modal-dialog modal-lg" role="document">
 						<div class="modal-content">
 							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">发私信</h5>
+								<h5 class="modal-title" id="publishModalLabel">添加新数据</h5>
 								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -84,18 +88,38 @@
 							<div class="modal-body">
 								<form>
 									<div class="form-group">
-										<label for="recipient-name" class="col-form-label">发给：</label>
-										<input type="text" class="form-control" id="recipient-name" value="落基山脉下的闲人">
+										<label for="width" class="col-form-label">宽度：</label>
+										<input type="text" class="form-control" placeholder="请输入玻璃宽度(mm)" required id="width">
 									</div>
 									<div class="form-group">
-										<label for="message-text" class="col-form-label">内容：</label>
-										<textarea class="form-control" id="message-text" rows="10"></textarea>
+										<label for="height" class="col-form-label">高度：</label>
+										<input type="text" class="form-control" placeholder="请输入玻璃高度(mm)" required id="height">
+									</div>
+									<div class="form-group">
+										<label for="thick" class="col-form-label">厚度：</label>
+										<input type="text" class="form-control" placeholder="请输入玻璃厚度(mm)" required id="thick">
+									</div>
+									<div class="form-group">
+										<label for="elasticModulus" class="col-form-label">弹性模量：</label>
+										<input type="text" class="form-control" placeholder="请输入玻璃弹性模量(MPa)" required id="elasticModulus">
+									</div>
+									<div class="form-group">
+										<label for="poissonRatio" class="col-form-label">泊松比：</label>
+										<input type="text" class="form-control" placeholder="请输入玻璃泊松比" required id="poissonRatio">
+									</div>
+									<div class="form-group">
+										<label for="upper" class="col-form-label">频率上限：</label>
+										<input type="text" class="form-control" placeholder="请输入玻璃频率上限(Hz)" required id="upper">
+									</div>
+									<div class="form-group">
+										<label for="lower" class="col-form-label">频率下限：</label>
+										<input type="text" class="form-control" placeholder="请输入玻璃频率下限(Hz)" required id="lower">
 									</div>
 								</form>
 							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
-								<button type="button" class="btn btn-primary" id="sendBtn">发送</button>
+								<button type="button" class="btn btn-primary" id="publishBtn">添加</button>
 							</div>
 						</div>
 					</div>
@@ -108,119 +132,59 @@
 								<h5 class="modal-title" id="hintModalLabel">提示</h5>
 							</div>
 							<div class="modal-body" id="hintBody">
-								发送完毕!
+								添加完毕!
 							</div>
 						</div>
 					</div>
-				</div>						
-				
-				<!-- 私信列表 -->
-				<ul class="list-unstyled mt-4">
-					<li class="media pb-3 pt-3 mb-2">
-						<a href="profile.html">
-							<img src="http://images.nowcoder.com/head/8t.png" class="mr-4 rounded-circle user-header" alt="用户头像" >
-						</a>
-						<div class="toast show d-lg-block" role="alert" aria-live="assertive" aria-atomic="true">
-							<div class="toast-header">
-								<strong class="mr-auto">落基山脉下的闲人</strong>
-								<small>2019-04-25 15:49:32</small>
-								<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body">
-								君不见, 黄河之水天上来, 奔流到海不复回!
-							</div>
-						</div>
-					</li>
-					<li class="media pb-3 pt-3 mb-2">
-						<a href="profile.html">
-							<img src="http://images.nowcoder.com/head/1t.png" class="mr-4 rounded-circle user-header" alt="用户头像" >
-						</a>
-						<div class="toast show d-lg-block" role="alert" aria-live="assertive" aria-atomic="true">
-							<div class="toast-header">
-								<strong class="mr-auto">nowcoder</strong>
-								<small>2019-04-25 15:49:32</small>
-								<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body">
-								君不见, 高堂明镜悲白发, 朝如青丝暮成雪!
-							</div>
-						</div>
-					</li>	
-					<li class="media pb-3 pt-3 mb-2">
-						<a href="profile.html">
-							<img src="http://images.nowcoder.com/head/8t.png" class="mr-4 rounded-circle user-header" alt="用户头像" >
-						</a>
-						<div class="toast show d-lg-block" role="alert" aria-live="assertive" aria-atomic="true">
-							<div class="toast-header">
-								<strong class="mr-auto">落基山脉下的闲人</strong>
-								<small>2019-04-25 15:49:32</small>
-								<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body">
-								人生得意须尽欢, 莫使金樽空对月!
+				</div>
+
+				<!-- 帖子列表 -->
+				<ul class="list-unstyled">
+					<li class="media pb-3 pt-3 mb-3 border-bottom" th:each="glass:${glasses}">
+<!--						<a href="site/profile.html">-->
+<!--							<img th:src="${map.user.headerUrl}" class="mr-4 rounded-circle" alt="用户头像" style="width:50px;height:50px;">-->
+<!--						</a>-->
+						<div class="media-body">
+							<h6 class="mt-0 mb-3">
+								<a th:href="@{|/detail/${glass.id}|}" th:utext="${glass.width}+'×'+${glass.height}">长度×宽度</a>
+<!--								<span class="badge badge-secondary bg-primary" th:if="${map.post.type==1}">置顶</span>-->
+<!--								<span class="badge badge-secondary bg-danger" th:if="${map.post.status==1}">精华</span>-->
+							</h6>
+							<div class="text-muted font-size-12">
+<!--								<u class="mr-3" th:utext="${map.user.username}">寒江雪</u> 发布于 <b th:text="${#dates.format(map.post.createTime,'yyyy-MM-dd HH:mm:ss')}">2019-04-15 15:32:18</b>-->
+								<ul class="d-inline float-right">
+									<li class="d-inline ml-2">频率上限 <i th:text="${glass.upper}">11</i></li>
+									<li class="d-inline ml-2">|</li>
+									<li class="d-inline ml-2">频率下限 <i th:text="${glass.lower}">11</i></li>
+								</ul>
 							</div>
 						</div>
 					</li>
-					<li class="media pb-3 pt-3 mb-2">
-						<a href="profile.html">
-							<img src="http://images.nowcoder.com/head/1t.png" class="mr-4 rounded-circle user-header" alt="用户头像" >
-						</a>
-						<div class="toast show d-lg-block" role="alert" aria-live="assertive" aria-atomic="true">
-							<div class="toast-header">
-								<strong class="mr-auto">nowcoder</strong>
-								<small>2019-04-25 15:49:32</small>
-								<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body">
-								天生我才必有用, 千金散尽还复来!
-							</div>
-						</div>
-					</li>	
-					<li class="media pb-3 pt-3 mb-2">
-						<a href="profile.html">
-							<img src="http://images.nowcoder.com/head/8t.png" class="mr-4 rounded-circle user-header" alt="用户头像" >
-						</a>
-						<div class="toast show d-lg-block" role="alert" aria-live="assertive" aria-atomic="true">
-							<div class="toast-header">
-								<strong class="mr-auto">落基山脉下的闲人</strong>
-								<small>2019-04-25 15:49:32</small>
-								<button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="toast-body">
-								岑夫子, 丹丘生, 将进酒, 杯莫停. 钟鼓馔玉不足贵, 但愿长醉不复醒!
-							</div>
-						</div>
-					</li>																																																										
 				</ul>
 				<!-- 分页 -->
-				<nav class="mt-5">
+				<nav class="mt-5" th:if="${page.rows>0}">
 					<ul class="pagination justify-content-center">
-						<li class="page-item"><a class="page-link" href="#">首页</a></li>
-						<li class="page-item disabled"><a class="page-link" href="#">上一页</a></li>
-						<li class="page-item active"><a class="page-link" href="#">1</a></li>
-						<li class="page-item"><a class="page-link" href="#">2</a></li>
-						<li class="page-item"><a class="page-link" href="#">3</a></li>
-						<li class="page-item"><a class="page-link" href="#">4</a></li>
-						<li class="page-item"><a class="page-link" href="#">5</a></li>
-						<li class="page-item"><a class="page-link" href="#">下一页</a></li>
-						<li class="page-item"><a class="page-link" href="#">末页</a></li>
+						<li class="page-item">
+							<a class="page-link" th:href="@{${page.path}(current=1)}">首页</a>
+						</li>
+						<li th:class="|page-item ${page.current==1?'disabled':''}|">
+							<a class="page-link" th:href="@{${page.path}(current=${page.current-1})}">上一页</a>
+						</li>
+						<li th:class="|page-item ${page.current==i?'active':''}|" th:each="i:${#numbers.sequence(page.from,page.to)}">
+							<a class="page-link" th:href="@{${page.path}(current=${i})}" th:text="${i}">1</a>
+						</li>
+						<li th:class="|page-item ${page.current==page.total?'disabled':''}|">
+							<a class="page-link" th:href="@{${page.path}(current=${page.current+1})}">下一页</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" th:href="@{${page.path}(current=${page.total})}">末页</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-
 		<!-- 尾部 -->
-		<footer class="bg-dark">
+		<footer class="bg-dark" th:replace="index::footer">
 			<div class="container">
 				<div class="row">
 					<!-- 二维码 -->
@@ -285,7 +249,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-	<script src="../js/global.js"></script>
-	<script src="../js/letter.js"></script>
+	<script th:src="@{/js/global.js}"></script>
+	<script th:src="@{/js/index.js}"></script>
 </body>
 </html>
