@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -33,9 +34,27 @@ public class GlassController {
         return "/index";
     }
     @RequestMapping(path = "/index",method =RequestMethod.POST)
-    public String query(Model model,Glass glassPara){
+    public String query(Model model,Glass glassPara,double frequency){
         Glass glass = glassService.findGlass(glassPara.getWidth(), glassPara.getHeight(), glassPara.getThick());
+        String evaluation=null;
+        double upper = glass.getUpper();
+        double highThreshold = glass.getHighThreshold();
+        double lowThreshold = glass.getLowThreshold();
+        double lower = glass.getLower();
+        if (frequency>=upper){
+            evaluation="A";
+        }else if (frequency>=highThreshold&&frequency<upper){
+            evaluation="B";
+        }else if (frequency>=lowThreshold&&frequency<highThreshold){
+            evaluation="C";
+        }else if (frequency>=lower&&frequency<lowThreshold){
+            evaluation="D";
+        }else {
+            evaluation="E";
+        }
         model.addAttribute("glass", glass);
+        model.addAttribute("frequency",frequency);
+        model.addAttribute("evaluation",evaluation);
         return "/index";
     }
     @RequestMapping(path = "/glass",method = RequestMethod.GET)

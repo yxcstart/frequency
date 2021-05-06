@@ -86,56 +86,98 @@
 						</div>
 					</div>
 					<div class="form-group row mt-4">
+						<label for="frequency" class="col-sm-2 col-form-label text-right">频率:</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="frequency" th:value="${frequency!=null?frequency:''}"
+								   name="frequency" placeholder="请输入玻璃频率(Hz)" required>
+							<div class="invalid-feedback">
+								两次输入的密码不一致!
+							</div>
+						</div>
+					</div>
+					<div class="form-group row mt-4">
 						<div class="col-sm-2"></div>
 						<div class="col-sm-10 text-center">
 							<button type="submit" class="btn btn-info text-white form-control">立即评估</button>
 						</div>
 					</div>
 				</form>
+			</div>
 
+
+			<div class="container pl-5 pr-5 pt-3 pb-3 mt-3 mb-3">
 				<h3 class="text-center text-info border-bottom pb-3">评估结果</h3>
 				<form class="mt-5">
 					<div class="form-group row">
 						<label for="upper" class="col-sm-2 col-form-label text-right">频率上限:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="upper" th:value="${glass!=null?glass.upper:''}"
-								   name="width" placeholder="" required>
-							<div class="invalid-feedback">
-								该账号已存在!
-							</div>
+							<span id="upper" class="form-control" th:text="${glass!=null?glass.upper:''}"></span>
 						</div>
 					</div>
-					<div class="form-group row mt-4">
+					<div class="form-group row">
 						<label for="highThreshold" class="col-sm-2 col-form-label text-right">临界频率A:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="highThreshold" th:value="${glass!=null?glass.highThreshold:''}"
-								   name="lowThreshold" placeholder="" required>
-							<div class="invalid-feedback">
-								密码长度不能小于8位!
-							</div>
+							<span id="highThreshold" class="form-control" th:text="${glass!=null?glass.highThreshold:''}"></span>
 						</div>
 					</div>
-					<div class="form-group row mt-4">
+					<div class="form-group row">
 						<label for="lowThreshold" class="col-sm-2 col-form-label text-right">临界频率B:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="lowThreshold" th:value="${glass!=null?glass.lowThreshold:''}"
-								   name="lowThreshold" placeholder="" required>
-							<div class="invalid-feedback">
-								两次输入的密码不一致!
-							</div>
+							<span id="lowThreshold" class="form-control" th:text="${glass!=null?glass.lowThreshold:''}"></span>
 						</div>
 					</div>
 					<div class="form-group row">
 						<label for="lower" class="col-sm-2 col-form-label text-right">频率下限:</label>
 						<div class="col-sm-10">
-							<input type="text" class="form-control" id="lower" th:value="${glass!=null?glass.lower:''}"
-								   name="lower" placeholder="" required>
-							<div class="invalid-feedback">
-								该邮箱已注册!
-							</div>
+							<span id="lower" class="form-control" th:text="${glass!=null?glass.lower:''}"></span>
 						</div>
 					</div>
+					<div class="form-group row" th:if="${evaluation!=null}">
+						<h5 class="text-success" >评估结论</h5>
+						<span th:if="${evaluation=='A'}">
+							您输入的玻璃频率为：<i th:text="${frequency}"></i>(Hz)，经过玻璃幕墙模态安全数据库的评估，
+							该玻璃的实际频率大于模板库该尺寸的玻璃频率上限：<i th:text="${glass.upper}"></i>(Hz)，
+							因此评估等级为:<b class="text-success">非常安全</b>
+						</span>
+						<span th:if="${evaluation=='B'}">
+							您输入的玻璃频率为：<i th:text="${frequency}"></i>(Hz)，经过玻璃幕墙模态安全数据库的评估，
+							该玻璃的实际频率大于模板库该尺寸的玻璃临界频率A：<i th:text="${glass.highThreshold}"></i>(Hz)，
+							同时小于模板库该尺寸的玻璃频率上限：<i th:text="${glass.upper}"></i>(Hz)，
+							因此评估等级为:<b class="text-success">安全可靠</b>
+						</span>
+						<span th:if="${evaluation=='C'}">
+							您输入的玻璃频率为：<i th:text="${frequency}"></i>(Hz)，经过玻璃幕墙模态安全数据库的评估，
+							该玻璃的实际频率大于模板库该尺寸的玻璃临界频率B：<i th:text="${glass.lowThreshold}"></i>(Hz)，
+							同时小于模板库该尺寸的玻璃临界频率A：<i th:text="${glass.highThreshold}"></i>(Hz)，
+							因此评估等级为:<b class="text-success">使用正常!</b>
+						</span>
+						<span th:if="${evaluation=='D'}">
+							您输入的玻璃频率为：<i th:text="${frequency}"></i>(Hz)，经过玻璃幕墙模态安全数据库的评估，
+							该玻璃的实际频率大于模板库该尺寸的玻璃频率下限：<i th:text="${glass.lower}"></i>(Hz)，
+							同时小于模板库该尺寸的玻璃临界频率B：<i th:text="${glass.lowThreshold}"></i>(Hz)，
+							因此评估等级为:<b class="text-warning">需要维修加固!!</b>
+						</span>
+						<span th:if="${evaluation=='E'}">
+							您输入的玻璃频率为：<i th:text="${frequency}"></i>(Hz)，经过玻璃幕墙模态安全数据库的评估，
+							该玻璃的实际频率小于模板库该尺寸的玻璃频率下限，<i th:text="${glass.lower}"></i>(Hz)，
+							因此评估等级为:<em>不能使用!!!</em>
+						</span>
+					</div>
 				</form>
+			</div>
+
+			<div class="container mt-3">
+				<!-- 回帖数量 -->
+				<div class="row">
+					<div class="col-8">
+						<h6><b class="square"></b> 注释</h6>
+					</div>
+					<p>&nbsp;&nbsp;&nbsp;频率上限：该尺寸之下玻璃四端固支所对应的一阶固有频率<br/>
+						&nbsp;&nbsp;&nbsp;频率下限：该尺寸之下玻璃四端简支所对应的一阶固有频率<br/>
+						&nbsp;&nbsp;&nbsp;临界频率A：该尺寸之下玻璃频率下限的1.3倍<br/>
+						&nbsp;&nbsp;&nbsp;临界频率B：该尺寸之下玻璃频率下限的1.2倍<br/>
+					</p>
+				</div>
 			</div>
 		</div>
 
@@ -180,10 +222,10 @@
 							<div class="col">
 								<ul class="nav btn-group-vertical company-info">
 									<li class="nav-item text-white-50">
-										地址：深圳市南山区西丽大学城哈工大校区
+										地址：深圳市南山区桃源街道深圳大学城哈尔滨工业大学校区
 									</li>
 									<li class="nav-item text-white-50">
-										联系方式：0755-27111111(电话)&nbsp;&nbsp;&nbsp;&nbsp;xxxx@hit.com
+										联系方式：0755-26031234(电话)&nbsp;&nbsp;&nbsp;&nbsp;19S054005@stu.hit.edu.cn
 									</li>
 									<li class="nav-item text-white-50">
 										土木与环境工程学院©2021 All rights reserved
@@ -207,5 +249,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 <script th:src="@{/js/global.js}"></script>
 <script th:src="@{/js/register.js}"></script>
+<script th:src="@{/js/letter.js}"></script>
 </body>
 </html>
