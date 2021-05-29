@@ -29,48 +29,51 @@ public class GlassController {
     @Autowired
     private HostHolder hostHolder;
 
-    @RequestMapping(path = "/index",method = RequestMethod.GET)
-    public String getIndex(){
+    @RequestMapping(path = "/index", method = RequestMethod.GET)
+    public String getIndex() {
         return "/index";
     }
-    @RequestMapping(path = "/index",method =RequestMethod.POST)
-    public String query(Model model,Glass glassPara,double frequency){
+
+    @RequestMapping(path = "/index", method = RequestMethod.POST)
+    public String query(Model model, Glass glassPara, double frequency) {
         Glass glass = glassService.findGlass(glassPara.getWidth(), glassPara.getHeight(), glassPara.getThick());
-        String evaluation=null;
+        String evaluation = null;
         double upper = glass.getUpper();
         double highThreshold = glass.getHighThreshold();
         double lowThreshold = glass.getLowThreshold();
         double lower = glass.getLower();
-        if (frequency>=upper){
-            evaluation="A";
-        }else if (frequency>=highThreshold&&frequency<upper){
-            evaluation="B";
-        }else if (frequency>=lowThreshold&&frequency<highThreshold){
-            evaluation="C";
-        }else if (frequency>=lower&&frequency<lowThreshold){
-            evaluation="D";
-        }else {
-            evaluation="E";
+        if (frequency >= upper) {
+            evaluation = "A";
+        } else if (frequency >= highThreshold && frequency < upper) {
+            evaluation = "B";
+        } else if (frequency >= lowThreshold && frequency < highThreshold) {
+            evaluation = "C";
+        } else if (frequency >= lower && frequency < lowThreshold) {
+            evaluation = "D";
+        } else {
+            evaluation = "E";
         }
         model.addAttribute("glass", glass);
-        model.addAttribute("frequency",frequency);
-        model.addAttribute("evaluation",evaluation);
+        model.addAttribute("frequency", frequency);
+        model.addAttribute("evaluation", evaluation);
         return "/index";
     }
-    @RequestMapping(path = "/glass",method = RequestMethod.GET)
-    public String getGlass(Model model, Page page){
+
+    @RequestMapping(path = "/glass", method = RequestMethod.GET)
+    public String getGlass(Model model, Page page) {
         page.setRows(glassService.findGlassRows());
         page.setPath("/glass");
         List<Glass> list = glassService.findGlasses(page.getOffset(), page.getLimit());
         model.addAttribute("glasses", list);
         return "/site/glass";
     }
-    @RequestMapping(path = "/add",method = RequestMethod.POST)
+
+    @RequestMapping(path = "/add", method = RequestMethod.POST)
     @ResponseBody
     public String addGlass(double width, double height, double thick, double elasticModulus,
-                           double poissonRatio, double upper, double lower){
+                           double poissonRatio, double upper, double lower) {
         User user = hostHolder.getUser();
-        if (user==null){
+        if (user == null) {
             return CommunityUtils.getJSONString(403, "只有管理员才能添加数据，请先登录！");
         }
         Glass glass = new Glass();
@@ -80,30 +83,30 @@ public class GlassController {
         glass.setElasticModulus(elasticModulus);
         glass.setPoissonRatio(poissonRatio);
         glass.setUpper(upper);
-        glass.setHighThreshold(lower*1.3);
-        glass.setLowThreshold(lower*1.2);
+        glass.setHighThreshold(lower * 1.3);
+        glass.setLowThreshold(lower * 1.2);
         glass.setLower(lower);
         glassService.addGlass(glass);
         return CommunityUtils.getJSONString(0, "数据库添加成功!");
     }
 
-    @RequestMapping(path = "/detail/{glassId}",method = RequestMethod.GET)
-    public String getGlassDetails(@PathVariable("glassId") int glassId,Model model){
+    @RequestMapping(path = "/detail/{glassId}", method = RequestMethod.GET)
+    public String getGlassDetails(@PathVariable("glassId") int glassId, Model model) {
         Glass glass = glassService.findGlassById(glassId);
         model.addAttribute("glass", glass);
         return "/site/glass-detail";
     }
 
-    @RequestMapping(path = "/update/{glassId}",method = RequestMethod.POST)
-    public String updateGlass(@PathVariable("glassId") int glassId,Glass glassOld,Model model){
-        glassService.updateGlass(glassId,glassOld);
+    @RequestMapping(path = "/update/{glassId}", method = RequestMethod.POST)
+    public String updateGlass(@PathVariable("glassId") int glassId, Glass glassOld, Model model) {
+        glassService.updateGlass(glassId, glassOld);
         Glass glass = glassService.findGlassById(glassId);
         model.addAttribute("glass", glass);
         return "/site/glass-detail";
     }
 
-    @RequestMapping(path = "/delete/{glassId}",method = RequestMethod.GET)
-    public String deleteGlass(@PathVariable("glassId")int glassId){
+    @RequestMapping(path = "/delete/{glassId}", method = RequestMethod.GET)
+    public String deleteGlass(@PathVariable("glassId") int glassId) {
         glassService.deleteGlass(glassId);
         return "redirect:/glass";
     }
