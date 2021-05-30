@@ -17,8 +17,8 @@ public class GlassService {
     @Autowired
     private GlassMapper glassMapper;
 
-    public Glass findGlass(double width,double height,double thick){
-        return glassMapper.queryGlass(width, height, thick);
+    public Glass findGlass(double width,double height,double thick,boolean frame){
+        return glassMapper.queryGlass(width, height, thick,frame);
     }
 
     public Glass findGlassById(int id){

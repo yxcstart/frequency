@@ -29,12 +29,12 @@ public class MapperTest {
     private LoginTicketMapper loginTicketMapper;
     @Test
     public void testGlassMapper(){
-        Glass glass = glassMapper.queryGlass(600, 600, 5);
+        Glass glass = glassMapper.queryGlass(600, 600, 5,false);
         System.out.println(glass);
     }
     @Test
     public void testGlassService(){
-        Glass glass = glassService.findGlass(600, 600, 5);
+        Glass glass = glassService.findGlass(600, 600, 5,true);
         System.out.println(glass);
     }
     @Test

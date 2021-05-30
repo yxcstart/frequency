@@ -12,7 +12,7 @@ import java.util.List;
  */
 @Mapper
 public interface GlassMapper {
-    Glass queryGlass(@Param("width") double width, @Param("height") double height, @Param("thick") double thick);
+    Glass queryGlass(@Param("width") double width, @Param("height") double height, @Param("thick") double thick ,@Param("frame") boolean frame);
 
     Glass findGlassById(int id);
 

@@ -35,8 +35,13 @@ public class GlassController {
     }
 
     @RequestMapping(path = "/index", method = RequestMethod.POST)
-    public String query(Model model, Glass glassPara, double frequency) {
-        Glass glass = glassService.findGlass(glassPara.getWidth(), glassPara.getHeight(), glassPara.getThick());
+    public String query(Model model, Glass glassPara, boolean frame, double frequency) {
+        Glass glass = glassService.findGlass(glassPara.getWidth(), glassPara.getHeight(), glassPara.getThick(), frame);
+//        System.out.println(frame);
+        // 这里应当对glass进行判空
+        if (glass==null){
+            throw new IllegalArgumentException("没有找到该尺寸的玻璃");
+        }
         String evaluation = null;
         double upper = glass.getUpper();
         double highThreshold = glass.getHighThreshold();

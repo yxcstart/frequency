@@ -15,6 +15,7 @@ public class Glass {
     private double highThreshold;
     private double lowThreshold;
     private double lower;
+    private boolean frame;
 
     public Glass() {
     }

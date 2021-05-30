@@ -9,6 +9,17 @@ body {
 	height: 100%;
 }
 
+.radio-box {
+
+	height: 100%;
+}
+
+.radio-text{
+	position: relative;
+	top: -12px;
+	left: 0px;
+}
+
 .nk-container {
 	position: relative;
 	height: auto;

@@ -16,6 +16,12 @@
         and width=#{width}
         and height=#{height}
         and thick=#{thick}
+        <if test="frame==true">
+            and frame=1
+        </if>
+        <if test="frame==false">
+            and frame=0
+        </if>
     </select>
     <select id="findGlassById" resultType="Glass">
         select <include refid="selectFields"></include>

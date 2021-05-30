@@ -86,6 +86,15 @@
 						</div>
 					</div>
 					<div class="form-group row mt-4">
+						<label for="frame" class="col-sm-2 col-form-label text-right">结构:</label>
+						<div class="col-sm-10">
+							<input type="radio" class="radio-box" id="frame" name="frame" value="0" required/>
+							<i class="radio-text">&nbsp;&nbsp;&nbsp;隐框玻璃</i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" class="radio-box" name="frame" value="1" required/>
+							<i class="radio-text">&nbsp;&nbsp;&nbsp;明框玻璃</i>
+						</div>
+					</div>
+					<div class="form-group row mt-4">
 						<label for="frequency" class="col-sm-2 col-form-label text-right">频率:</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="frequency" th:value="${frequency!=null?frequency:''}"
@@ -187,7 +196,8 @@
 				<div class="row">
 					<!-- 二维码 -->
 					<div class="col-4 qrcode">
-						<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />
+<!--						<img src="https://uploadfiles.nowcoder.com/app/app_download.png" class="img-thumbnail" style="width:136px;" />-->
+						<img th:src="@{/img/QRcode.jpg}" class="img-thumbnail" style="width:136px;" />
 					</div>
 					<!-- 公司信息 -->
 					<div class="col-8 detail-info">
@@ -231,9 +241,9 @@
 										土木与环境工程学院©2021 All rights reserved
 									</li>
 									<li class="nav-item text-white-50">
-										京ICP备14055008号-4 &nbsp;&nbsp;&nbsp;&nbsp;
+										京ICP备14055007号-4 &nbsp;&nbsp;&nbsp;&nbsp;
 										<img src="http://static.nowcoder.com/company/images/res/ghs.png" style="width:18px;" />
-										京公网安备 11010502036488号
+										京公网安备 11010502036487号
 									</li>
 								</ul>
 							</div>
@@ -244,11 +254,11 @@
 		</footer>
 	</div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script th:src="@{/js/global.js}"></script>
-<script th:src="@{/js/register.js}"></script>
-<script th:src="@{/js/letter.js}"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script th:src="@{/js/global.js}"></script>
+	<script th:src="@{/js/register.js}"></script>
+	<script th:src="@{/js/letter.js}"></script>
 </body>
 </html>
